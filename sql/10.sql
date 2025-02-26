@@ -6,4 +6,4 @@ SELECT F.title, F.film_id, COUNT(*) AS actor_count
 FROM film F
 JOIN film_actor A ON F.film_id = A.film_id
 GROUP BY F.film_id
-ORDER BY actor_count, title ASC;
+ORDER BY actor_count, title;
